@@ -1,0 +1,23 @@
+
+#include<stdio.h>
+
+
+void main()
+{
+    int pin;
+    clrscr();
+
+    printf("Enter PIN: ");
+    scanf("%d",&pin);
+
+    if(pin == 1234)
+    {
+        printf("Door Unlocked");
+    }
+    else
+    {
+        printf("Access Denied");
+    }
+
+    getch();
+}
