@@ -1,0 +1,23 @@
+
+#include<stdio.h>
+
+
+void main()
+{
+    int weight;
+    clrscr();
+
+    printf("Enter object weight in kg: ");
+    scanf("%d",&weight);
+
+    if(weight > 5)
+    {
+        printf("Load Exceeded");
+    }
+    else
+    {
+        printf("Load Accepted");
+    }
+
+    getch();
+}
