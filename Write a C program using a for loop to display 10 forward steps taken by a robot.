@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+void main()
+{
+    int step;
+    clrscr();
+
+    for(step = 1; step <= 10; step++)
+    {
+        printf("Robot took step %d\n", step);
+    }
+
+    printf("Robot completed 10 steps!");
+
+    getch();
+}
