@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+    int i,age;
+    clrscr();
+
+    for(i=1;i<=5;i++)
+    {
+        printf("\nEnter age: ");
+        scanf("%d",&age);
+
+        if(age>=18)
+            printf("Eligible for voting");
+        else
+            printf("Not eligible for voting");
+    }
+
+    getch();
+}
