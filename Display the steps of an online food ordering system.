@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+    int i;
+    clrscr();
+
+    for(i=1;i<=4;i++)
+    {
+        if(i==1)
+            printf("Select Food\n");
+        if(i==2)
+            printf("Place Order\n");
+        if(i==3)
+            printf("Payment Completed\n");
+        if(i==4)
+            printf("Food Delivered\n");
+    }
+    getch();
+}
