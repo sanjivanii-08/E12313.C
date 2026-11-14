@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+    int i,choice;
+    clrscr();
+
+    for(i=1;i<=5;i++)
+    {
+        printf("\n1. Bus");
+        printf("\n2. Train");
+        printf("\n3. Auto");
+
+        printf("\nEnter choice: ");
+        scanf("%d",&choice);
+
+        if(choice==1)
+            printf("Bus Selected");
+        else if(choice==2)
+            printf("Train Selected");
+        else if(choice==3)
+            printf("Auto Selected");
+        else
+            printf("Invalid Choice");
+    }
+
+    getch();
+}
