@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void main()
+{
+    int i,temp;
+    clrscr();
+
+    for(i=1;i<=5;i++)
+    {
+        printf("\nEnter temperature: ");
+        scanf("%d",&temp);
+
+        if(temp>35)
+            printf("Hot day");
+        else if(temp>=20)
+            printf("Normal day");
+        else
+            printf("Cold day");
+    }
+    getch();
+}
