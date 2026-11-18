@@ -1,0 +1,22 @@
+#include <stdio.h>
+#define MAX 5
+int main() 
+{
+    int number[MAX], i, j, max=0, num_pos=0; // Declare an array to store 5 numbers, and variables for loop counters and maximum value
+    printf("Input 5 integers: \n");
+
+    for(i = 0; i < MAX; i++) {
+        scanf(" %d", &number[i]); // Read 5 integers from the user
+    }
+    
+    for(j = 0; j < MAX; j++) 
+    {
+        if(number[j] > max) { // Check if current number is greater than current maximum
+            max = number[j]; // Update maximum if needed
+            num_pos = j; // Record the position of maximum
+        }
+    }
+
+    printf("Highest value: %d\nPosition: %d\n", max, num_pos+1); // Print the maximum value and its position
+    return 0;
+}
