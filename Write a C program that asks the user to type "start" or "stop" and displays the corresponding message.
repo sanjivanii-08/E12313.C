@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void main()
+{
+    char str[10];
+
+    clrscr();
+
+    printf("Enter start or stop: ");
+    scanf("%s", str);
+
+    if(strcmp(str,"start")==0)
+    {
+        printf("Machine Started");
+    }
+    else if(strcmp(str,"stop")==0)
+    {
+        printf("Machine Stopped");
+    }
+    else
+    {
+        printf("Invalid Command");
+    }
+
+    getch();
+}
