@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    int sensor_data[5] = {10, 20, 30, 40, 50};
+    int *ptr;
+    int i;
+
+    ptr = sensor_data;
+
+    for(i=0; i<5; i++)
+    {
+        printf("Sensor reading %d = %d\n", i+1, *(ptr+i));
+    }
+
+    return 0;
+}
